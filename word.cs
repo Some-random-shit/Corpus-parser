@@ -7,11 +7,11 @@ namespace ConsoleApplication1
 {
     class word
     {
-		public int dom;
-		public string feat;
-		public int id;
-		public string lemma;
-		public string link;
+        public int dom;
+        public string feat;
+        public int id;
+        public string lemma;
+        public string link;
 
         public word(int _dom, string _feat, int _id, string _lemma, string _link)
         {

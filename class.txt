@@ -1,0 +1,31 @@
+class word
+{
+	public int w_id;
+	public string dom_id;
+	public int s_id;
+	public string link_type;
+}
+
+class sentense
+{
+public int s_id;
+Dictionary<int, word> wordsMap;	//public hashmap (int w_id, word _word); http://professorweb.ru/my/csharp/charp_theory/level12/12_10.php
+
+}
+
+
+
+
+class parser (filepath)
+{
+Dictionary<int, sentense> sentensesMap; //private hashmap (int s_id,sentense _sentense);
+
+	public void parse(string filename)
+		{
+		XDocument doc = XDocument.Load(filename);
+		//парсинг
+
+		}
+
+}
+

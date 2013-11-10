@@ -9,11 +9,11 @@ namespace ConsoleApplication1
     {
         public word(int _dom, string _feat, int _id, string _lemma, string _link)
         {
-                int dom = _dom;
-                string feat = _feat;
-                int id = _id;
-                string lemma = _lemma;
-                string link = _link;
+                this.dom = _dom;
+                this.feat = _feat;
+                this.id = _id;
+                this.lemma = _lemma;
+                this.link = _link;
         }
 
         public int dom;

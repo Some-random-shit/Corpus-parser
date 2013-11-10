@@ -48,6 +48,7 @@ namespace ConsoleApplication1
                                       sent.Value,
                                       wordsMap);
             sentencesMap.Add(s.id, s);
+            this.sentenceMap = sentencesMap;
     }
     
 

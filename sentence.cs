@@ -9,9 +9,9 @@ namespace ConsoleApplication1
     {
         public sentence(int _id, string _value, Dictionary<int, word> _wordsMap)
         {
-            int id = _id;
-            string value = _value;
-            Dictionary<int, word> wordsMap = _wordsMap;
+            this.id = _id;
+            this.value = _value;
+            this.wordsMap = _wordsMap;
         }
 
         public int id;

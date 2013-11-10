@@ -11,12 +11,12 @@ namespace ConsoleApplication1
 {
     class parser
     {
-        private Dictionary<int, sentence> sentenceMap;
+        private Dictionary<int, sentence> sentenceMap; //я не очень умный
         public void parse(string fileName)
         {
             XDocument doc =  XDocument.Load(fileName);
 
-            Dictionary<int, sentence> sentencesMap = new Dictionary<int, sentence>();
+            /*Dictionary<int, sentence>*/ sentenceMap = new Dictionary<int, sentence>();
     
             foreach (XElement sent in doc.Root.Elements().Elements("S"))
             {
@@ -47,11 +47,8 @@ namespace ConsoleApplication1
             sentence s = new sentence(Convert.ToInt32((string)sent.Attribute("ID").Value),
                                       sent.Value,
                                       wordsMap);
-            sentencesMap.Add(s.id, s);
-            this.sentenceMap = sentencesMap;
-    }
-    
-
+            sentenceMap.Add(s.id, s);
+            }
 
         }
 

@@ -9,17 +9,19 @@ namespace ConsoleApplication1
     {
         public int dom;
         public string feat;
+        public string[] featValues;
         public int id;
         public string lemma;
         public string link;
 
         public word(int _dom, string _feat, int _id, string _lemma, string _link)
         {
-                this.dom = _dom;
-                this.feat = _feat;
-                this.id = _id;
-                this.lemma = _lemma;
-                this.link = _link;
+            this.dom = _dom;
+            this.feat = _feat;
+            this.id = _id;
+            this.lemma = _lemma;
+            this.link = _link;
+            this.featValues = this.feat.Split(' ');
         }
     }
 }
